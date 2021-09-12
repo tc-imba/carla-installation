@@ -1,17 +1,7 @@
-# Welcome to MkDocs
+# About
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Many of the docs are copied or modified from the original [CARLA Documentation](https://carla.readthedocs.io/en/).
 
-## Commands
+I added some notes and warnings based on my experience when building Unreal Engine and CARLA in various attempts.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Currently, only building on Windows is available. I may add Linux and macOS guide in the future.

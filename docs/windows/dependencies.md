@@ -22,6 +22,7 @@ Get the 2019 version of Visual Studio from [here](https://developerinsider.co/do
 * [__Make__](http://gnuwin32.sourceforge.net/packages/make.htm) generates the executables. It is necessary to use __Make version 3.81__, otherwise the build may fail. If you have multiple versions of Make installed, check that you are using version 3.81 in your PATH when building CARLA. You can check your default version of Make by running `make --version`.
 * [__7Zip__](https://www.7-zip.org/) is a file compression software. This is required for automatic decompression of asset files and prevents errors during build time due to large files being extracted incorrectly or partially.
 * [__Python3 x64__](https://www.python.org/downloads/) is the main scripting language in CARLA. Having a x32 version installed may cause conflict, so it is highly advisable to have it uninstalled.
+* [__RenderDoc__](https://renderdoc.org/) is a standalone open-source graphics debugger that you can use to perform single-frame captures and inspect them.
 
 ### Python Dependencies
 
@@ -63,7 +64,7 @@ If you don't see any errors, you are ready to use Chocolatey! Type `choco` or `c
 The installation command is quite straight-forward, very similar to those package managers on Linux. You only need to wait a few minutes until all dependencies are installed.
 
 ```sh
-choco install -y cmake git make 7zip python
+choco install -y cmake git make 7zip python renderdoc
 ```
 
 Check the dependencies by
@@ -77,7 +78,7 @@ pip3 --version
 
 !!! Note
     
-    By default, `cmake` is not automatically added to the `PATH`. You can add it if you need to run it in command line (not required since carla and UE4 can find it).
+    By default, `cmake` is not automatically added to the `PATH`. You can add it if you need to run it in command line (not required since Visual Studio 2019 also ships a builtin cmake in x64 Visual C++ Toolset). `renderdoc` is not a command line tool so it is not checked here as well.
 
 ## Install Dependencies Manually
 

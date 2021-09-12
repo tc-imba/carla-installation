@@ -1,8 +1,35 @@
 site_name: Carla Installation
+repo_url: https://github.com/tc-imba/carla-installation
+repo_name: tc-imba/carla-installation
+
 theme:
   name: material
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/lightbulb
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.expand
+extra:
+  homepage: https://tc-imba.github.io/carla-installation/
+
+nav:
+  - About: index.md
+  - Windows:
+      - Dependencies: windows/dependencies.md
+      - Unreal Engine: windows/unreal-engine.md
+      - CARLA: windows/carla.md
+
+
 plugins:
   - search
+
 
 markdown_extensions:
   - admonition

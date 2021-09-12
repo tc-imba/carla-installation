@@ -36,7 +36,8 @@ To build the modified version of Unreal Engine:
 In a terminal, navigate to the location you want to save Unreal Engine and clone the _carla_ branch:
 
 ```sh
-git clone --depth 1 -b carla https://github.com/CarlaUnreal/UnrealEngine.git .
+git clone --depth 1 -b carla https://github.com/CarlaUnreal/UnrealEngine.git
+cd UnrealEngine
 ```
 
 !!! Note
