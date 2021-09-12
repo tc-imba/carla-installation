@@ -58,7 +58,7 @@ make PythonAPI
 
 The compilation will take about 15-20 minutes on a desktop with a 24-core CPU, or about 1-2 hours on a laptop. Please br patient if you don't have a powerful CPU.
 
-After the compilation, a `.whl` file will be generated. You can install it with
+After the compilation, a `.whl` file will be generated. Its path should be something like `PythonAPI\carla\dist\carla-x.x.x-cpxx-cpxx-win_amd64.whl`. You can install it with
 ```bash
 pip3 install <path/to/wheel>.whl
 ```
